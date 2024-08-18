@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briker Zone</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- font-awsome cdn -->
+     <script src="https://kit.fontawesome.com/b7d71449b3.js" crossorigin="anonymous"></script>
+     <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "button-bg" : "rgb(231, 111, 81)",
+                "text-color" : "rgb(255, 255, 255)",
+                "para-color" : "rgb(255, 255, 255, 0.5)",
+                "banner-bg" : "rgb(38, 70, 83)"
+              },
+            }
+          }
+        }
+      </script>
+
+    <style>
+        .poppins{
+            font-family: "Poppins", system-ui;
+        }
+        .banner-bg{
+          background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.82), rgba(24, 24, 24, 0.562)),
+          url('./images/others/background.jpg'); 
+        }
+    </style>
+
+</head>
+<body class="poppins max-w-screen-2xl mx-auto">
+  <!------- header section start here ----------------------->
+    <header class="banner-bg bg-no-repeat bg-center bg-cover px-6 mb-10 lg:px-20 ">
+      <div class=" mx-w-[100%] h-screen pb-32 " >
+        <div class="nav-bar py-6 px-2 flex justify-between lg:pt-14 text-text-color">
+          <div>
+            <h1 class="text-4xl font-bold">Go Ride</h1>
+          </div>
+          <div class="text-2xl lg:hidden md:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="hidden md:flex justify-center items-center gap-9 ">
+            <ul class="flex justify-center items-center gap-9 text-base">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="w-40 h-14 bg-button-bg text-xl font-bold"><a href="#">Login</a></button>
+          </div>
+        </div>
+       <div class=" flex justify-start items-center h-full">
+        <div class="text-text-color  md:w-1/2 ">
+          <h1 class="text-6xl font-bold mb-8 lg:text-7xl">Keep Your Ride Safe <br> At Every Time</h1>
+          <p class="text-para-color text-base mb-10">Amet minim mollit non deserunt ullamco est sit aliqua dolor 
+            do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button class="w-40 h-14 bg-button-bg text-xl font-bold"><a href="#">Login</a></button>
+        </div>
+       </div>
+
+      </div>
+    </header>
+    <!------- main section start here ----------------------->
+    <main class="">
+      <!-- banner-section -->
+       <section class="px-6 banner w-full bg-banner-bg mb-10 lg:px-20 ">
+        <div class="flex flex-col gap-12 justify-between items-center py-10  md:flex-row md:py-20">
+          <!-- banner-text -->
+        <div class="">
+          <div>
+            <p class="text-para-color mb-3 text-sm">Computer-controlled digital transistorized with electronic advance</p>
+            <h1 class="text-4xl md:text-5xl text-text-color font-bold mb-4">Honda CBR 300R</h1>
+            <p class="text-para-color mb-4 text-sm md:w-[456px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button class="w-40 h-11 bg-button-bg text-text-color text-base rounded-md"><a href="#">Purchase</a></button>
+          </div>
+          
+        </div>
+        <!-- banner-img -->
+         <div class="">
+           <img class="w-full" src="./images/slider/bike3.png" alt="">
+         </div>
+        </div>
+       </section>
+       <!-- bikes section -->
+        <section class="px-6 py-10 lg:px-20">
+          <div class="">
+            <!-- bikes-text -->
+             <div class="mb-14 text-center">
+               <h1 class="text-2xl font-bold mb-3 md:text-5xl">Fetured Bikes In This Year</h1>
+               <h6 class="text-sm text-button-bg ">Best bike collection</h6>
+               <div class="flex justify-center items-center mt-2 ">
+                 <div class="w-14 h-0.5 bg-button-bg"></div>
+               </div>
+             </div>
+             <!-- bikes-img -->
+              <div class="grid gap-24 justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card ">
+                  <img class="grayscale" src="./images/others/feature-bike.png" alt="">
+                </div>
+                <div class="card">
+                  <img src="./images/others/feature-bike.png" alt="">
+                </div>
+                <div class="card">
+                  <img class="grayscale" src="./images/others/feature-bike.png" alt="">
+                </div>
+              </div>
+          </div>
+        </section>
+      
+    </main>
+    <!------- footer section start here ----------------------->
+    <footer class="px-6 lg:px-20">
+
+    </footer>
+</body>
+</html>
